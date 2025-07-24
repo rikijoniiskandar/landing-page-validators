@@ -57,8 +57,8 @@ const Hero = () => {
       id='main-banner'>
       <div className='container px-4'>
         <div className='grid grid-cols-12'>
-          <motion.div {...leftAnimation} className='lg:col-span-5 col-span-12'>
-            <div className='flex gap-6 items-center lg:justify-start justify-center mb-5 mt-24'>
+          <motion.div {...leftAnimation} className='col-span-12'>
+            <div className='flex gap-6 items-center justify-center mb-5 mt-24'>
               <Image
                 src='/images/icons/icon-bag.svg'
                 alt='icon'
@@ -69,44 +69,26 @@ const Hero = () => {
                 Crypto On The <span className='text-primary'>Go</span>
               </p>
             </div>
-            <h1 className='font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10'>
-              Buy and Sell <span className='text-primary'>Crypto</span> of your{' '}
-              <span className='text-primary'>choice</span>!
+            <h1 className='font-medium lg:text-76 md:text-70 text-54 text-center text-white mb-10'>
+              Building Robust Foundations for  <span className='text-primary'>Decentralized {' '}</span> 
+              <span className='text-primary'>Networks!</span>
             </h1>
-            <div className='flex items-center md:justify-start justify-center gap-8'>
+            <div className='flex items-center justify-center gap-8'>
               <button
                 className='bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7 z-50'
                 onClick={() => setIsBuyingOpen(true)}>
-                Buy Crypto
+                Our Role & Expertise
               </button>
               <button
                 className='bg-transparent border border-primary rounded-lg text-21 font-medium hover:bg-primary hover:text-darkmode text-primary py-2 px-7'
                 onClick={() => setIsSellingOpen(true)}>
-                Sell Crypto
+                Start a Collaboration
               </button>
-            </div>
-            <div className='flex items-center md:justify-start justify-center gap-12 mt-20'>
-              <Link href='#' className='hover:scale-110 duration-300'>
-                <Image
-                  src='/images/hero/playstore.png'
-                  alt='Play Store'
-                  width={240}
-                  height={70}
-                />
-              </Link>
-              <Link href='#' className='hover:scale-110 duration-300'>
-                <Image
-                  src='/images/hero/applestore.png'
-                  alt='App Store'
-                  width={240}
-                  height={70}
-                />
-              </Link>
             </div>
           </motion.div>
           <motion.div
             {...rightAnimation}
-            className='col-span-7 lg:block hidden'>
+            className='col-span-7  hidden'>
             <div className='ml-20 -mr-64'>
               <Image
                 src='/images/hero/banner-image.png'
@@ -117,47 +99,10 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        <CardSlider />
+        {/* <CardSlider /> */}
       </div>
       <div className='absolute w-50 h-50 bg-linear-to-bl from-tealGreen from-50% to-charcoalGray to-60% blur-400 rounded-full -top-64 -right-14 -z-1'></div>
 
-      {/* Modals for Buy and Sell */}
-      {isBuying && (
-        <div className='fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50'>
-          <div
-            ref={BuyRef}
-            className='relative w-full max-w-md overflow-hidden rounded-lg px-8 pt-14 pb-8 z-999 text-center bg-dark_grey/90 backdrop-blur-md'>
-            <button
-              onClick={() => setIsBuyingOpen(false)}
-              className='absolute top-0 right-0 mr-8 mt-8 dark:invert'
-              aria-label='Close Buy Modal'>
-              <Icon
-                icon='tabler:currency-xrp'
-                className='text-white hover:text-primary text-24 inline-block me-2'
-              />
-            </button>
-            <BuyCrypto />
-          </div>
-        </div>
-      )}
-      {isSelling && (
-        <div className='fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50'>
-          <div
-            ref={SellRef}
-            className='relative w-full max-w-md overflow-hidden rounded-lg px-8 pt-14 pb-8 z-999 text-center bg-dark_grey/90 backdrop-blur-md'>
-            <button
-              onClick={() => setIsSellingOpen(false)}
-              className='absolute top-0 right-0 mr-8 mt-8 dark:invert'
-              aria-label='Close Sell Modal'>
-              <Icon
-                icon='tabler:currency-xrp'
-                className='text-white hover:text-primary text-24 inline-block me-2'
-              />
-            </button>
-            <SellCrypto />
-          </div>
-        </div>
-      )}
     </section>
   )
 }

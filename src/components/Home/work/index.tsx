@@ -22,30 +22,30 @@ const Work = () => {
   const services = [
     {
       icon: '/images/icons/icon-consulting.svg',
-      text: 'Blockchain Consulting',
+      text: 'Validator Testnet',
     },
     {
       icon: '/images/icons/icon-blockchain.svg',
-      text: 'Blockchain Solutions',
+      text: 'Validator Mainnet',
     },
     {
       icon: '/images/icons/icon-Services.svg',
-      text: 'Custom Development',
+      text: 'Node Testnet',
     },
   ]
 
   return (
     <section className='md:pt-28' id='work'>
-      <div className='container px-4 mx-auto lg:max-w-(--breakpoint-xl) px-4'>
-        <div ref={ref} className='grid grid-cols-12 items-center'>
+      <div className='container px-4 mx-auto lg:max-w-(--breakpoint-xl) '>
+        <div ref={ref} className='grid grid-cols-12 items-center align-middle justify-center'>
           <motion.div
             {...bottomAnimation}
-            className='lg:col-span-7 col-span-12'>
-            <p className='sm:text-28 text-18 text-white'>
+            className='col-span-12 justify-center'>
+            <div className='text-4xl text-white'>
               Work with <span className='text-primary'>us</span>
-            </p>
-            <h2 className='sm:text-40 text-30 text-white lg:w-full md:w-70% font-medium'>
-              Successfully launch your blockchain project.
+            </div>
+            <h2 className='text-18 text-white lg:w-full md:w-70% font-medium mt-4'>
+              <div>I offer reliable validator & testnet node services with high uptime, security, real-time monitoring, failover, and backups. Transparent, report-ready, and communication-focused</div>
             </h2>
             <div className='grid md:grid-cols-2 gap-7 mt-11'>
               {services.map((service, index) => (
@@ -63,7 +63,7 @@ const Work = () => {
               ))}
             </div>
           </motion.div>
-          <motion.div {...TopAnimation} className='lg:col-span-5 col-span-12'>
+          {/* <motion.div {...TopAnimation} className='lg:col-span-5 col-span-12'>
             <div className='2xl:-mr-40 mt-9 flex justify-center'>
               <Image
                 src='/images/work/img-work-with-us.png'
@@ -73,7 +73,7 @@ const Work = () => {
                 className='lg:w-full'
               />
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
