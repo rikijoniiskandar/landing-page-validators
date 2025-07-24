@@ -13,7 +13,7 @@ const Footer: FC = () => {
         <div className='grid grid-cols-1 sm:grid-cols-12 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16'>
           <div className='lg:col-span-4 md:col-span-6 col-span-6'>
             <Logo />
-            <div className='flex gap-6 items-center mt-8 relative z-1'>
+            {/* <div className='flex gap-6 items-center mt-8 relative z-1'>
               <Link href='#' className='group'>
                 <Icon
                   icon='fa6-brands:facebook-f'
@@ -38,11 +38,11 @@ const Footer: FC = () => {
                   className='text-white group-hover:text-primary'
                 />
               </Link>
-            </div>
+            </div> */}
             <h3 className='text-white text-24 font-medium sm:mt-20 mt-12'>
               2025 Copright
             </h3>
-            <Link className='text-white text-24 font-medium sm:mt-20 mt-12 hover:text-primary' target='_blank' href="https://getnextjstemplates.com/">GetNextJs Templates</Link>
+            {/* <Link className='text-white text-24 font-medium sm:mt-20 mt-12 hover:text-primary' target='_blank' href="https://getnextjstemplates.com/">GetNextJs Templates</Link> */}
           </div>
           <div className='lg:col-span-2 md:col-span-3 col-span-6'>
             <h4 className='text-white mb-4 font-medium text-24'>Links</h4>

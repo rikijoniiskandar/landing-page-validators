@@ -8,7 +8,7 @@ import Upgrade from '@/components/Home/upgrade'
 import Perks from '@/components/Home/perks'
 import { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'CrypGo',
+  title: 'MJV | Blockchain Validator',
 }
 
 export default function Home() {
@@ -16,11 +16,11 @@ export default function Home() {
     <main>
       <Hero />
       <Work />
-      <TimeLine />
-      <Platform />
-      <Portfolio />
-      <Upgrade />
-      <Perks />
+      {/* <TimeLine /> */}
+      {/* <Platform /> */}
+      {/* <Portfolio /> */}
+      {/* <Upgrade /> */}
+      {/* <Perks /> */}
     </main>
   )
 }
