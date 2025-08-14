@@ -45,7 +45,7 @@ const Work = () => {
               Work with <span className='text-primary'>us</span>
             </div>
             <h2 className='text-18 text-white lg:w-full md:w-70% font-medium mt-4'>
-              <div>I offer reliable validator & testnet node services with high uptime, security, real-time monitoring, failover, and backups. Transparent, report-ready, and communication-focused</div>
+              <div>We offer reliable validator & testnet node services with high uptime, security, real-time monitoring, failover, and backups. Transparent, report-ready, and communication-focused</div>
             </h2>
             <div className='grid md:grid-cols-2 gap-7 mt-11'>
               {services.map((service, index) => (
